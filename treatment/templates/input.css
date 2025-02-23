@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .transition-transform {
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+    }
+
+    /* Only apply these styles on desktop */
+    @media (min-width: 1600px) {
+        .desktop-container {max-width: 90%}
+    }
+    @media (min-width: 768px) {
+        .header-transparent {
+            background: transparent !important;
+            backdrop-filter: none !important;
+        }
+
+        .header-transparent a:not(.bg-black) {
+            color: white !important;
+        }
+
+        /* Add transition for smooth hiding/showing */
+        .action-button {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .header-scrolled .action-button {
+            opacity: 0;
+            transform: translateY(-100%);
+            pointer-events: none;
+        }
+
+        .header-transparent .header-transparent-logo {
+            display: block;
+        }
+        
+        .header-transparent .header-scrolled-logo {
+            display: none;
+        }
+
+        .header-scrolled .header-transparent-logo {
+            display: none;
+        }
+        
+        .header-scrolled .header-scrolled-logo {
+            display: block;
+        }
+    }
+
+    /* Add these media queries */
+    @media (max-width: 991px) {
+        .hero-image-mobile {
+            display: block !important;
+        }
+        .hero-image-desktop {
+            display: none !important;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .hero-image-mobile {
+            display: none !important;
+        }
+        .hero-image-desktop {
+            display: block !important;
+        }
+        .header1 {
+            font-size: calc(1.875rem + (1vw - 9.92px) * 4.3103);
+        }
+    }
+
+    
+}

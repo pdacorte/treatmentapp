@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Bond - Cosmetic Clinic</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="min-h-screen bg-white font-arial">
+    <!-- Fixed Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm transition-all duration-300 header-transparent" id="mainHeader">
+        <!-- Mobile Header -->
+        <div class="md:hidden container mx-auto">
+            <div class="flex items-center justify-between py-4 px-4">
+                <button id="mobileMenuBtn" class="text-black">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                
+                <a href="/" class="text-center">
+                    <img src="./DRBW.svg" alt="DR. BOND" class="h-8 w-auto" style="filter: brightness(0);">
+                </a>
+
+                <a href="#" class="bg-black text-white px-4 py-2 text-sm font-medium">
+                    BOOK
+                </a>
+            </div>
+        </div>
+
+        <!-- Desktop Header -->
+        <div class="hidden md:block desktop-container mx-auto">
+            <div class="flex items-center py-4 px-4">
+                <div class="flex items-center space-x-8">
+                    <div class="flex flex-col items-center space-y-4">
+                        <a href="tel:02081688178" class="action-button text-lg font-bold hover:underline underline underline-offset-8 hover:opacity-80">
+                            CALL US - 069 069 069
+                        </a>
+                        <nav class="flex space-x-6">
+                            <a href="#" class="text-lg font-medium hover:underline underline-offset-4 hover:opacity-80">ABOUT</a>
+                            <a href="#" class="text-lg font-medium hover:underline underline-offset-4 hover:opacity-80">FEES</a>
+                            <a href="#" class="text-lg font-medium hover:underline underline-offset-4 hover:opacity-80">TREATMENTS</a>
+                            <a href="#" class="text-lg font-medium hover:underline underline-offset-4 hover:opacity-80">CONDITIONS</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <a href="index.html" class="absolute left-1/2 -translate-x-1/2">
+                    <img src="./DRBW.svg" alt="DR. BOND" class="h-12 w-auto transition-opacity duration-300 header-transparent-logo">
+                    <img src="./DRBW.svg" alt="DR. BOND" class="h-12 w-auto transition-opacity duration-300 header-scrolled-logo hidden" style="filter: brightness(0);">
+                </a>
+
+                <div class="flex-1 flex justify-end">
+                    <div class="flex flex-col items-center space-y-4">
+                        <a href="#" class="action-button text-white px-6 py-2 text-lg font-medium underline underline-offset-8 hover:opacity-80">
+                            BOOK A CONSULTATION
+                        </a>
+                        <nav class="flex space-x-6">
+                            <a href="#" class="text-lg font-medium hover:underline underline-offset-4 hover:opacity-80">OUR TEAM</a>
+                            <a href="#" class="text-lg font-medium hover:underline underline-offset-4 hover:opacity-80">PATIENT JOURNEY</a>
+                            <a href="#" class="text-lg font-medium hover:underline underline-offset-4 hover:opacity-80">NEWS</a>
+                            <a href="#" class="text-lg font-medium hover:underline underline-offset-4 hover:opacity-80">CONTACT</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Outside header for cleaner organization) -->
+    <div id="mobileMenu" class="hidden md:hidden fixed left-0 right-0 top-[72px] bg-white z-40">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex flex-col space-y-4">
+                <a href="tel:02081688178" class="text-sm font-medium">CALL US – 020 8168 8178</a>
+                <a href="#" class="text-sm font-medium">ABOUT</a>
+                <a href="#" class="text-sm font-medium">FEES</a>
+                <a href="#" class="text-sm font-medium">TREATMENTS</a>
+                <a href="#" class="text-sm font-medium">CONDITIONS</a>
+                <a href="#" class="text-sm font-medium">OUR TEAM</a>
+                <a href="#" class="text-sm font-medium">PATIENT JOURNEY</a>
+                <a href="#" class="text-sm font-medium">NEWS</a>
+                <a href="#" class="text-sm font-medium">CONTACT</a>
+                <a href="#" class="bg-black text-white px-6 py-2 text-sm font-medium text-center hover:bg-black/90">
+                    BOOK A CONSULTATION
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 bg-olive">
+        
+        <div class="pt-32"></div>
+        
+        <div class="relative mx-auto px-4 pt-10 flex flex-col items-center">
+            <iframe src="https://cal.com/dacorte" width="100%" height="600" frameborder="0" class="rounded-lg shadow-lg"></iframe>
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-olive text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center mb-12">
+                <img src="./DRBW.svg" alt="DR. Bond" class="h-12 mb-8">
+                <div class="text-center space-y-4">
+                    <p>CALL US – 020 8168 8178</p>
+                    <p>EMAIL US – INFO@DRBondCLINIC.CO.UK</p>
+                    <div class="flex items-center justify-center space-x-4 mt-4">
+                        <p>LET'S CONNECT</p>
+                        <a href="#" class="hover:opacity-80">
+                            <i class="fab fa-facebook text-lg"></i>
+                        </a>
+                        <a href="#" class="hover:opacity-80">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12 justify-items-center">
+                <div class="space-y-4">
+                    <h3 class="font-bold mb-4">NEWSLETTER SIGN-UP</h3>
+                    <p class="text-sm">Sign up to our newsletter to receive updates.</p>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="NAME" class="w-full bg-transparent border border-white text-white placeholder-white/70 p-2">
+                        <input type="email" placeholder="EMAIL" class="w-full bg-transparent border border-white text-white placeholder-white/70 p-2">
+                        <button type="submit" class="border border-white text-white px-6 py-2 hover:bg-white hover:text-olive">
+                            SUBMIT
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">OUR CLINIC</h3>
+                    <nav class="space-y-2">
+                        <a href="#" class="block text-sm hover:underline">OUR ETHOS</a>
+                        <a href="#" class="block text-sm hover:underline">TREATMENTS</a>
+                        <a href="#" class="block text-sm hover:underline">CONDITIONS</a>
+                    </nav>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">OUR TEAM</h3>
+                    <nav class="space-y-2">
+                        <a href="#" class="block text-sm hover:underline">PATIENT JOURNEY</a>
+                        <a href="#" class="block text-sm hover:underline">NEWS</a>
+                        <a href="#" class="block text-sm hover:underline">CONTACT</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-8">
+                <div class="flex flex-wrap justify-center gap-4 text-sm mb-4">
+                    <a href="#" class="hover:underline">COMPLAINTS PROCEDURE</a>
+                    <a href="#" class="hover:underline">PRIVACY & COOKIE POLICY</a>
+                    <a href="#" class="hover:underline">TERMS OF USE</a>
+                    <a href="#" class="hover:underline">SITEMAP</a>
+                </div>
+                <p class="text-center text-sm">
+                    ©2025 DR BOND. ALL RIGHTS RESERVED.<br>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 bg-beige p-4 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="space-y-2">
+                <h3 class="font-medium">WE USE COOKIES</h3>
+                <p class="text-sm">
+                    Please note that our website uses cookies. To learn more about our cookies and how we use them, please read our
+                    <a href="#" class="underline">Privacy & Cookie Policy</a>.
+                </p>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="acceptCookies" class="border border-black text-black px-6 py-2 hover:bg-black hover:text-white">
+                    ACCEPT
+                </button>
+                <button id="closeCookieBanner" class="text-black hover:opacity-70">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this script section before the closing body tag -->
+    <script>
+        // Get DOM elements
+        const cookieBanner = document.getElementById('cookieBanner');
+        const acceptButton = document.getElementById('acceptCookies');
+        const closeButton = document.getElementById('closeCookieBanner');
+
+        // Check if user has already accepted cookies
+        const hasAcceptedCookies = localStorage.getItem('cookiesAccepted');
+
+        // Hide banner if cookies were previously accepted
+        if (hasAcceptedCookies) {
+            cookieBanner.style.display = 'none';
+        }
+
+        // Handle accept button click
+        acceptButton.addEventListener('click', () => {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieBanner.style.display = 'none';
+        });
+
+        // Handle close button click
+        closeButton.addEventListener('click', () => {
+            cookieBanner.style.display = 'none';
+        });
+
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Header scroll functionality
+        const header = document.getElementById('mainHeader');
+        
+        window.addEventListener('scroll', () => {
+            // Calculate scroll percentage
+            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            
+            // Only toggle header style if screen is desktop size (>= 768px)
+            if (window.innerWidth >= 768) {
+                if (scrollPercent > 5) {
+                    header.classList.remove('header-transparent');
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.add('header-transparent');
+                    header.classList.remove('header-scrolled');
+                }
+            }
+        });
+
+        // Initialize header state
+        if (window.innerWidth >= 768) {
+            header.classList.add('header-transparent');
+        }
+
+        // Update header state on window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+                if (scrollPercent <= 5) {
+                    header.classList.add('header-transparent');
+                    header.classList.remove('header-scrolled');
+                }
+            } else {
+                header.classList.remove('header-transparent');
+                header.classList.remove('header-scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
