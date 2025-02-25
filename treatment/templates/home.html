@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-32">
+        <div class="absolute inset-0">
+            <img src="https://b3458516.smushcdn.com/3458516/wp-content/uploads/2023/07/home-header-mob-520x810.jpg?lossy=2&strip=1&webp=1" 
+                 alt="Luxury skincare" 
+                 class="hero-image-mobile w-full h-full object-cover">
+            <img src="https://b3458516.smushcdn.com/3458516/wp-content/uploads/2023/07/home-header.jpg?lossy=2&strip=1&webp=1" 
+                 alt="Luxury skincare" 
+                 class="hero-image-desktop w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/5"></div>
+        </div>
+        <div class="relative mx-auto px-4 pt-80 flex flex-col items-center text-center">
+            <h1 class="header1 text-white text-3xl font-medium leading-tight px-10">
+                SOPHISTICATED SANCTUARY FOR ANTI AGING & REJUVENATION
+            </h1>
+            <a href="appointment.html" class="inline-block mt-8 text-white text-2xl font-bold underline underline-offset-8 hover:opacity-80">
+                BOOK A CONSULTATION
+            </a>
+        </div>
+    </section>
+
+    <!-- Treatment Spotlight -->
+    <section class="bg-olive py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-white text-4xl text-center mb-12">TREATMENT SPOTLIGHT</h2>
+            <div class="relative">
+                <button id="prevSlide" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/10 rounded-full p-2">
+                    <i class="fas fa-chevron-left text-white text-2xl"></i>
+                </button>
+                <div class="overflow-hidden">
+                    <div id="slideTrack" class="flex transition-transform duration-300">
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="relative aspect-[16/9] bg-gray-100 rounded-lg overflow-hidden">
+                                <img src="https://b3458516.smushcdn.com/3458516/wp-content/uploads/2023/07/home-intro-2.jpg?lossy=2&strip=1&webp=1" alt="Anti Wrinkle Injections" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-black/30 p-8 flex flex-col justify-end">
+                                    <div class="text-white">
+                                        <p class="text-sm mb-2">SKIN</p>
+                                        <h3 class="text-2xl font-light mb-4">ANTI WRINKLE INJECTIONS</h3>
+                                        <a href="#" class="inline-block border border-white text-white px-6 py-2 text-sm hover:bg-white hover:text-black">
+                                            VIEW TREATMENT
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Additional slides here -->
+                    </div>
+                </div>
+                <button id="nextSlide" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/10 rounded-full p-2">
+                    <i class="fas fa-chevron-right text-white text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+
+

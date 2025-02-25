@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="{% static 'output.css' %}">
 </head>
+<!-- Inline Styles Block -->
+<style>
+{% block style %}{% endblock style %}
+</style>
 
 <body class="min-h-screen bg-white font-arial">
     <!-- Fixed Header -->
@@ -23,7 +27,7 @@
                 </button>
                 
                 <a href="/" class="text-center">
-                    <img src="./DRBW.svg" alt="DR. BOND" class="h-8 w-auto" style="filter: brightness(0);">
+                    <img src="{% static 'img/DRBW.svg' %}" alt="DR. BOND" class="h-8 w-auto" style="filter: brightness(0);">
                 </a>
 
                 <a href="#" class="bg-black text-white px-4 py-2 text-sm font-medium">
@@ -50,8 +54,8 @@
                 </div>
 
                 <a href="/" class="absolute left-1/2 -translate-x-1/2">
-                    <img src="./DRBW.svg" alt="DR. BOND" class="h-12 w-auto transition-opacity duration-300 header-transparent-logo">
-                    <img src="./DRBW.svg" alt="DR. BOND" class="h-12 w-auto transition-opacity duration-300 header-scrolled-logo hidden" style="filter: brightness(0);">
+                    <img src="{% static 'img/DRBW.svg' %}" alt="DR. BOND" class="h-12 w-auto transition-opacity duration-300 header-transparent-logo">
+                    <img src="{% static 'img/DRBW.svg' %}" alt="DR. BOND" class="h-12 w-auto transition-opacity duration-300 header-scrolled-logo hidden" style="filter: brightness(0);">
                 </a>
 
                 <div class="flex-1 flex justify-end">
@@ -92,12 +96,13 @@
     </div>
 
     {% block content %} {% endblock content %}
+    {% block cta %} {% endblock cta %}
 
     <!-- Footer -->
     <footer class="bg-olive text-white py-16">
         <div class="container mx-auto px-4">
             <div class="flex flex-col items-center mb-12">
-                <img src="./DRBW.svg" alt="DR. Bond" class="h-12 mb-8">
+                <img src="{% static 'img/DRBW.svg' %}" alt="DR. Bond" class="h-12 mb-8">
                 <div class="text-center space-y-4">
                     <p>CALL US – 020 8168 8178</p>
                     <p>EMAIL US – INFO@DRBondCLINIC.CO.UK</p>
@@ -179,6 +184,7 @@
     </div>
 
     <!-- Add this script section before the closing body tag -->
+    <script>{% block script %}{% endblock script %}</script>
     <script src="{% static 'script.js' %}"></script>
     <script>
         // Get DOM elements
